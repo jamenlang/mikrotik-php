@@ -1,4 +1,4 @@
-mikrotik-php
+#mikrotik-php
 =============
 a suite of php scripts 
 
@@ -11,9 +11,9 @@ fast_config: quickly apply a /30 ip to an interface and generates a complete out
 
 =============
 
- ##############
-# cookiecutter #
- ##############
+
+## cookiecutter
+
 
 routine to mass configure routers by updating router OS and applying config files using php.
 
@@ -71,9 +71,7 @@ $ethernet_forenaming_scheme = 'ether';
 $sfp_forenaming_scheme = 'sfp'; //make sure this matches your backup files. e.g. sfp1
 
 
- #############
-# fast_config #
- #############
+## fast_config
 
 routine to apply /30 subnet to interfaces or add them to new vlans using php.
 
