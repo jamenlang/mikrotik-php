@@ -1,11 +1,32 @@
 mikrotik-php
-============
+=============
+a suite of php scripts 
 
-routine to update router OS and apply config files using php.
+If you experience problems with the following scripts:
+be sure to fix them and let me know :)
+
+cookiecutter: make up to date copies of routers from backup files
+
+fast_config: quickly apply a /30 ip to an interface and generates a complete output for copy and pasting.
+
+=============
+
+ ##############
+# cookiecutter #
+ ##############
+
+routine to mass configure routers by updating router OS and applying config files using php.
+
+requirements:
+=============
 
 cookiecutter requires phpseclib to function. 
 
 phpseclib is available from http://phpseclib.sourceforge.net/
+
+
+setup:
+=============
 
 change the entries in the config file accordingly.
 
@@ -48,3 +69,31 @@ make sure this matches your backup files. e.g. ether1,ether2,ether3 would be 'et
 $ethernet_forenaming_scheme = 'ether'; 
 
 $sfp_forenaming_scheme = 'sfp'; //make sure this matches your backup files. e.g. sfp1
+
+
+ #############
+# fast_config #
+ #############
+
+routine to apply /30 subnet to interfaces or add them to new vlans using php.
+
+requirements:
+=============
+
+fast_config requires phpseclib to function. 
+
+phpseclib is available from http://phpseclib.sourceforge.net/
+
+
+setup:
+=============
+
+change the entries in the config file accordingly.
+
+$admin_password = 'tacobravo'; //admin password for router.
+
+$ethernet_forenaming_scheme = 'ether'; //make sure this matches your router config. e.g. ether1 
+
+$sfp_forenaming_scheme = 'sfp'; //make sure this matches your router config. e.g. sfp1
+
+$vlan_forenaming_scheme = 'vlan'; //make sure this is set to what you want vlans to start with, e.g. vlan3309
