@@ -12,7 +12,7 @@ if(!isset($_POST) || $_POST != ''){
 ?>
 <html>
 <body style="background-color: e0e7f7";>
-<form action="initial_config2.php" method="POST"/>
+<form action="fast_config.php" method="POST"/>
 <table border="0">
 <tr><td style="border-left: dashed 1px; border-top: dashed 1px;">VLAN:</td><td style="border-right: dashed 1px; border-top: dashed 1px;"><input type="text" name="vlan"/></td></tr>
 <tr><td style="border-left: dashed 1px; border-bottom: dashed 1px;">Interface: </td><td style="border-right: dashed 1px; border-bottom: dashed 1px;"><input type="text" name="interface"/></td></tr>
