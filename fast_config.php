@@ -157,4 +157,7 @@ if ($ssh->login('admin', $GLOBALS['admin_password'])) {
 	$ssh->exec('beep');
 	$ssh->exec('beep');
 }
+else{
+	die('password ' . $GLOBALS['admin_password'] . ' is incorrect.');
+}
 ?>
